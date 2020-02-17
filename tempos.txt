@@ -1,1 +1,4 @@
+problem 1: real	0m0,031s
+problem 2: real	0m0,211s
+
 problem 15: 0m0,214s
