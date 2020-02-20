@@ -1,6 +1,6 @@
 grid = [[]]*20
 
-print(grid)
+# print(grid)
 
 grid[0] = [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8]
 grid[1] = [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0]
@@ -35,17 +35,82 @@ for i in range(0,20):
         if product > greatest:
             greatest = product
 
+print(greatest)
+
 # vertical
 
 for j in range(0, 20):
     for i in range(0, 17):
         product = int(grid[i][j])*int(grid[i+1][j])*int(grid[i+2][j])*int(grid[i+3][j])
 
+print(greatest)
 
-# diagonal /
+
 
 
 # diagonal \
+print(greatest)
 
 for i in range(19, -1, -1):
     print(i)
+    last_down = i + 3
+    if last_down <= 19:
+        last_down_aux = last_down
+        k = i
+        j = 0
+        while last_down_aux <= 19:
+            product = grid[k][j]*grid[k+1][j+1]*grid[k+2][j+2]*grid[k+3][j+3]
+            if product > greatest:
+                greatest = product
+            k += 1
+            j += 1
+            last_down_aux += 1
+
+print(greatest)
+
+for j in range(1, 20):
+    last_right = i+3
+    if last_right <= 19:
+        last_right_aux = last_right
+        i=0
+        k=j
+        while last_right_aux <= 19 and  k + 3 <= 19:
+            product = grid[i][k] * grid[i + 1][k + 1] * grid[i + 2][k + 2] * grid[i + 3][k + 3]
+            if product > greatest:
+                greatest = product
+            k += 1
+            i += 1
+            last_right_aux += 1
+
+print(greatest)
+
+# diagonal /
+
+for i in range(0, 20):
+    last_up = i-3
+    if last_up >= 0:
+        last_up_aux = last_up
+        j=0
+        k=i
+        while last_up_aux >= 0 and j + 3 <= 19:
+            product = grid[k][j] * grid[k - 1][j + 1] * grid[k - 2][j + 2] * grid[k - 3][j + 3]
+            if product > greatest:
+                greatest = product
+            k -= 1
+            j += 1
+            last_up_aux += 1
+print(greatest)
+
+for j in range(0, 20):
+    last_right = j+3
+    if last_right <= 19:
+        last_right_aux = last_right
+        i=19
+        k=j
+        while last_right_aux <= 0:
+            product = grid[k][j] * grid[i - 1][k + 1] * grid[i - 2][k + 2] * grid[i - 3][k + 3]
+            if product > greatest:
+                greatest = product
+            i -= 1
+            k += 1
+            last_right_aux += 1
