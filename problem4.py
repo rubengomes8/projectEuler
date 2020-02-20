@@ -13,6 +13,7 @@ def isPalindrome(number):
         else:
             return False
     return True
+
 a = 0
 b = 0
 while i != 0:
@@ -27,4 +28,5 @@ while i != 0:
 
 print(highest)
 print(a, b)
+
 

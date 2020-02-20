@@ -1,15 +1,18 @@
 problem 1: real	0m0,031s
 problem 2: real	0m0,211s
-
+problem 3:
 problem 4: ERRADO
-problem 5: real    2m21,913s (com prints) real    1m33,281s (sem prints)
+problem 5: real    1m33,281s
 problem 6: real    0m0,045s
-
+problem 7: real    0m22,585s
 problem 8: real    0m0,040s
 problem 9: real    0m23,298s
+problem 10: real    173m48,821s
 problem 11: real    0m0,037s
 problem 12: real    162m26,361s
+problem 13: real    0m0,033s
+problem 14: real    0m26,834s
+problem 15: real    0m0,214s
+problem 16: real    0m0,037s
+problem 17: real    0m0,038s
 
-
-
-problem 15: 0m0,214s
