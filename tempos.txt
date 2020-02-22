@@ -1,7 +1,7 @@
 problem 1: real	0m0,031s
 problem 2: real	0m0,211s
 problem 3:
-problem 4: ERRADO
+problem 4: --- 1.2363042831420898 seconds ---
 problem 5: real    1m33,281s
 problem 6: real    0m0,045s
 problem 7: real    0m22,585s
