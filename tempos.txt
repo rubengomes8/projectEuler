@@ -15,4 +15,7 @@ problem 14: real    0m26,834s
 problem 15: real    0m0,214s
 problem 16: real    0m0,037s
 problem 17: real    0m0,038s
+problem 18: --- 0.0 seconds ---
+problem 19:
+
 
