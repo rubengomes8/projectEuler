@@ -19,12 +19,12 @@ start_time = time.time()
 week_day = 0 # 1 jan 1900
 day = 1
 month = 1
-year = 1901
+year = 1900
 
 counter = 0
 while day != 1 or month != 1 or year != 2001:
     # print(day,"/", month,"/", year)
-    if week_day == 6 and day == 1:
+    if week_day == 6 and day == 1 and year >= 1901:
         counter += 1
 
     if week_day == 6:
