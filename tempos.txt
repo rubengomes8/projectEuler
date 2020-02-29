@@ -18,6 +18,9 @@ problem 17: real    0m0,038s
 problem 18: --- 0.0 seconds ---
 problem 19: --- 0.046871185302734375 seconds ---
 problem 20: --- 0.0 seconds ---
+problem 21: real    0m1,684s
+problem 22: real    0m0,047s
+
 
 
 
